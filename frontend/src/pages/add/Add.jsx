@@ -64,7 +64,8 @@ const Add = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     mutation.mutate(state);
-    navigate("/mygigs")
+    console.log(state);
+   // navigate("/mygigs")
   };
 
   return (

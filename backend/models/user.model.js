@@ -33,7 +33,7 @@ const userSchema = new Schema({
       },
       isinv: {
         type: Boolean,
-        default:false
+        default:false,
       },
     },{
         timestamps:true

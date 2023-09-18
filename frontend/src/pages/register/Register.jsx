@@ -26,7 +26,7 @@ const Register = () => {
   const handleOrg = (e) => {
     setUser((prev) => {
       // return { ...prev, isinv: e.target.checked };
-      return { ...prev, isinv: true };
+      return { ...prev, isinv:e.target.checked };
     });
   };
 

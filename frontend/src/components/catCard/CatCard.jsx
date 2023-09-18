@@ -2,9 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CatCard.scss";
 
-function CatCard({ card }) {
+function CatCard({ card,cat}) {
   return (
+<<<<<<< Updated upstream
     <Link to={`/gigs?cat=${card.cat}`}>
+=======
+    <Link to= {`/gigs?cat=${cat}`}>
+>>>>>>> Stashed changes
       <div className="catCard">
         <img src={card.img} alt="" />
         <span className="desc">{card.desc}</span>

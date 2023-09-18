@@ -17,7 +17,8 @@ const Gigs = () => {
   const { isLoading, error, data, refetch } = useQuery({
     queryKey: ["gigs"],
     queryFn: () =>
-      newRequest.get(`/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`)
+      //newRequest.get(`/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`)
+      newRequest.get(`/gigs${search}`)
       .then((res) => {
         return res.data;
       }),
@@ -42,8 +43,8 @@ const Gigs = () => {
   return (
     <div className='gigs'>
       <div className="container">
-      <span className="breadcrumbs">Fiverr {'>'} Graphics & Design {'>'} </span>
-      <h1>AI Artists</h1>
+      <span className="breadcrumbs">Ayush Portal {'>'} "abc" {'>'} </span>
+      <h1>Startups</h1>
       <p>Explore the boundaries of art and technology with Liverr's AI artists</p>
       <div className="menu">
         <div className="left">

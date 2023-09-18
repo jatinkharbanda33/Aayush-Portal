@@ -45,7 +45,7 @@ export const cards = [
       id: 7,
       title: "Healthcare and Biotech",
       desc: "Support healthcare",
-      val:"hn",
+      val:"hnb",
       img: "https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     

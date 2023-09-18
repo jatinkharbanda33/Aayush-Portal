@@ -86,8 +86,10 @@ const Add = () => {
               <option value="Tech">IT & Services </option>
               <option value="hnb">Healthcare and Biotech</option>
               <option value="et">EdTech</option>
-              <option value="tnh">travel & Hospitality</option>
+              <option value="tnh">Travel & Hospitality</option>
+              <option value="lt">Legal Tech</option>
               <option value="fnb">Food & Beverage</option>
+              <option value="bc">Blockchain & Crypto</option>
               
             </select>
             <div className="images">

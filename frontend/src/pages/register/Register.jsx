@@ -12,7 +12,7 @@ const Register = () => {
     password: "",
     img: "",
     country: "",
-    isinv: false,
+    isinv:false,
   });
 
   const navigate = useNavigate();
@@ -25,7 +25,8 @@ const Register = () => {
 
   const handleOrg = (e) => {
     setUser((prev) => {
-      return { ...prev, isinv: e.target.checked };
+      // return { ...prev, isinv: e.target.checked };
+      return { ...prev, isinv: true };
     });
   };
 
@@ -77,7 +78,7 @@ const Register = () => {
           <button type="submit">Register</button>
         </div>
         <div className="right">
-          <h1>Are you An Investor</h1>
+          <h1>Do you want to List your Startup</h1>
           <br />
           <div className="toggle">
           <label className="switch">

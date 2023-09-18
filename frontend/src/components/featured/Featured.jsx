@@ -15,22 +15,22 @@ function Featured() {
       <div className="container">
         <div className="left">
           <h1>
-          Discover Top <span>Freelancers</span> - Your Vision, Their Expertise!
-          </h1>
+          Exploring Tomorrow&apos;s <span>Innovators</span> - Your Vision, Their Genesis!
+          </h1>   
           <div className="search">
             <div className="searchInput">
               <img src="./img/search.png" alt="" />
-              <input type="text" placeholder='Try "building mobil app"' 
+              <input type="text" placeholder='Enter startup name' 
               onChange={(e) => setInput(e.target.value)}/>
             </div>
             <button onClick={handleSubmit}>Search</button>
           </div>
           <div className="popular">
             <span>Popular:</span>
-            <button onClick={()=>{navigate(`/gigs?cat=design`)}}>Web Design</button>
-            <button onClick={()=>{navigate(`/gigs?cat=wordpress`)}}>WordPress</button>
-            <button onClick={()=>{navigate(`/gigs?cat=logo`)}}>Logo Design</button>
-            <button onClick={()=>{navigate(`/gigs?cat=ai`)}}>AI Services</button>
+            <button onClick={()=>{navigate(`/gigs?cat=design`)}}>Tech Startups</button>
+            <button onClick={()=>{navigate(`/gigs?cat=wordpress`)}}>Travel</button>
+            <button onClick={()=>{navigate(`/gigs?cat=logo`)}}>AI-ML</button>
+            <button onClick={()=>{navigate(`/gigs?cat=ai`)}}>Education</button>
           </div>
         </div>
         <div className="right">

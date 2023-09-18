@@ -57,7 +57,7 @@ export const intent = async (req, res, next) => {
 export const getOrders = async (req, res, next) => {
   try {
     const orders = await Order.find({
-      ...(req.isSeller ? { sellerId: req.userId } : { buyerId: req.userId }),
+      ...(req.isinv ? { sellerId: req.userId } : { buyerId: req.userId }),
       isCompleted: true,
     });
 

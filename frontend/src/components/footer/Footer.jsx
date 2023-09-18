@@ -8,8 +8,10 @@ function Footer() {
         
         <div className="bottom">
           <div className="left">
-            <h2>Profolio</h2>
-            <span>© Profolio International Ltd. 2023</span>
+            <h2>Ayush Portal</h2>
+            
+            {/* <span>© Profolio International Ltd. 2023</span> */}
+            <span>© Copyright <strong>Ministry of Ayush</strong></span>
           </div>
           <div className="right">
             <div className="social">

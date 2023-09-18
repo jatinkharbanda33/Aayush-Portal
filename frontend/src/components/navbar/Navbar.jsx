@@ -46,23 +46,23 @@ const Navbar = () => {
                 <span>Explore</span>
                 <span>English</span>
                 <Link to="/login" className='link'>Sign In</Link>
-                {!currentUser && <span> Invest</span>}
-                {!currentUser && <Link to="/register" className='link'>Join</Link>}
+                {/* {!currentUser && <span> Invest</span>} */}
+                {!currentUser && <Link to="/register" className='link'>Register</Link>}
                 {currentUser && (
                   <div className="user" onClick={()=>setOpen(!open)}>
                     <img src={currentUser.img || "/img/noavatar.jpg"} alt=""/>
                     <span>{currentUser?.username}</span>
                     {open && <div className='options'>
                       {
-                        currentUser?.isSeller && (
+                        currentUser?.isinv && (
                           <>
-                          <Link className='link' to="/mygigs">Gigs</Link>
-                          <Link className='link' to="add">Add New Gig</Link>
+                          <Link className='link' to="/mygigs">My Startups</Link>
+                          <Link className='link' to="add">List New Startup</Link>
                           </>
                         )
                       }
-                      <Link className='link' to="orders">Order</Link>
-                      <Link className='link' to="messages">Messages</Link>
+                      {/* <Link className='link' to="orders">Order</Link>
+                      <Link className='link' to="messages">Messages</Link> */}
                       <Link className='link' onClick={handleLogout}>Logout</Link>
                     </div>}
                   </div>

@@ -42,13 +42,9 @@ const GigSchema = new Schema({
       type: String,
       required: true,
     },
-<<<<<<< Updated upstream
-    shortTitle: {
-      type: String,
-=======
+
     currEval: {
       type: Number,
->>>>>>> Stashed changes
       required: true,
     },
     shortDesc: {

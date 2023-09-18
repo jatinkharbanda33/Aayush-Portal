@@ -6,7 +6,6 @@ import upload from "../../utils/upload";
 
 const Register = () => {
   const [file, setFile] = useState(null);
-  const [orgFile, setOrgFile] = useState(null);
   const [user, setUser] = useState({
     username: "",
     email: "",
@@ -14,9 +13,6 @@ const Register = () => {
     img: "",
     country: "",
     isinv: false,
-    orgproof:"",
-    desc: "",
-    type:""
   });
 
   const navigate = useNavigate();
@@ -37,12 +33,10 @@ const Register = () => {
     e.preventDefault();
 
     const url = await upload(file);
-    const url2=await upload(orgFile);
     try {
       await newRequest.post("/auth/register", {
         ...user,
         img: url,
-        orgproof:url2,
       });
       navigate("/")
     } catch (err) {
@@ -84,14 +78,15 @@ const Register = () => {
         </div>
         <div className="right">
           <h1>Are you An Investor</h1>
+          <br />
           <div className="toggle">
           <label className="switch">
               <input type="checkbox" onChange={handleOrg} />
               <span className="slider round"></span>
             </label>
-            
           </div>
-          
+          <br />
+          <br />
           <label htmlFor="">Phone Number</label>
           <input
             name="phone"
@@ -99,17 +94,7 @@ const Register = () => {
             placeholder="+91 xxxx xxxx xx"
             onChange={handleChange}
           />
-          <label htmlFor="">Organisation Proof</label>
-          <input type="file" onChange={(e) => setOrgFile(e.target.files[0])} />
-          <label htmlFor="">Description</label>
-          <textarea
-            placeholder="A short description of yourself"
-            name="desc"
-            id=""
-            cols="30"
-            rows="10"
-            onChange={handleChange}
-          ></textarea>
+          
         </div>
       </form>
     </div>

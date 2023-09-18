@@ -1,5 +1,5 @@
 .trustedBy {
-    background-color: #fafafa;
+    background-color: #ffffff;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -7,14 +7,15 @@
     .container {
       max-width: 760px;
       display: flex;
+      padding-top: 8%;
       align-items: center;
-      gap: 20px;
-      color: rgb(200, 200, 200);
+      // gap: 10px;
+      color: rgb(5, 0, 0);
       font-weight: 500;
-  
-      img{
-        height: 50px;
-        object-fit: contain;
-      }
+      font-size: 72px;
+      // img{
+      //   height: 50px;
+      //   object-fit: contain;
+      // }
     }
   }

@@ -13,6 +13,9 @@ const Register = () => {
     img: "",
     country: "",
     isinv: false,
+    orgproof:"",
+    desc: "",
+    type:""
   });
 
   const navigate = useNavigate();
@@ -23,9 +26,9 @@ const Register = () => {
     });
   };
 
-  const handleOrg = (e) => {
+  const handleSeller = (e) => {
     setUser((prev) => {
-      return { ...prev, isinv: e.target.checked };
+      return { ...prev, isSeller: e.target.checked };
     });
   };
 
@@ -65,7 +68,7 @@ const Register = () => {
           />
           <label htmlFor="">Password</label>
           <input name="password" type="password" onChange={handleChange} />
-          <label htmlFor="">Display Picture</label>
+          <label htmlFor="">Profile Picture</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
           <label htmlFor="">Country</label>
           <input
@@ -78,23 +81,32 @@ const Register = () => {
         </div>
         <div className="right">
           <h1>Are you An Investor</h1>
-          <br />
           <div className="toggle">
-          <label className="switch">
-              <input type="checkbox" onChange={handleOrg} />
+            <label htmlFor="">Activate the seller account</label>
+            <label className="switch">
+              <input type="checkbox" onChange={handleSeller} />
               <span className="slider round"></span>
             </label>
           </div>
-          <br />
-          <br />
+          
           <label htmlFor="">Phone Number</label>
           <input
             name="phone"
             type="text"
-            placeholder="+91 xxxx xxxx xx"
+            placeholder="+1 234 567 89"
             onChange={handleChange}
           />
-          
+          <label htmlFor="">Organisation Proof</label>
+          <input type="file" onChange={(e) => setOrgFile(e.target.files[0])} />
+          <label htmlFor="">Description</label>
+          <textarea
+            placeholder="A short description of yourself"
+            name="desc"
+            id=""
+            cols="30"
+            rows="10"
+            onChange={handleChange}
+          ></textarea>
         </div>
       </form>
     </div>

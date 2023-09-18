@@ -116,12 +116,12 @@ const Add = () => {
             <label htmlFor="">Current Evaluation</label>
             <input
               type="text"
-              name="shortTitle"
+              name="currEval"
               placeholder="₹ xxxx"
               onChange={handleChange}
             />
             <label htmlFor="">Number of Employess</label>
-            <input type="number" onChange={handleChange} name="price" />
+            <input type="number" onChange={handleChange} name="nEmp" />
           </div>
         </div>
       </div>

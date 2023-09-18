@@ -54,15 +54,15 @@ const Navbar = () => {
                     <span>{currentUser?.username}</span>
                     {open && <div className='options'>
                       {
-                        currentUser?.isSeller && (
+                        currentUser?.isinv && (
                           <>
-                          <Link className='link' to="/mygigs">Gigs</Link>
-                          <Link className='link' to="add">Add New Gig</Link>
+                          <Link className='link' to="/mygigs">My Startups</Link>
+                          <Link className='link' to="add">List New Startup</Link>
                           </>
                         )
                       }
-                      <Link className='link' to="orders">Order</Link>
-                      <Link className='link' to="messages">Messages</Link>
+                      {/* <Link className='link' to="orders">Order</Link>
+                      <Link className='link' to="messages">Messages</Link> */}
                       <Link className='link' onClick={handleLogout}>Logout</Link>
                     </div>}
                   </div>

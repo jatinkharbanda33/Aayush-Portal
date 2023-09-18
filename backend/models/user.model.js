@@ -31,9 +31,9 @@ const userSchema = new Schema({
         type: String,
         required: false,
       },
-      isSeller: {
+      isinv: {
         type: Boolean,
-        default:false
+        default:false,
       },
     },{
         timestamps:true

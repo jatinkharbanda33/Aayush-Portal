@@ -23,7 +23,7 @@ const Home = () => {
       </Slide>
 
 
-      <div className="features">
+      {/* <div className="features">
         <div className="container">
           <div className="item">
             <h1>A whole world of freelance talent at your fingertips</h1>
@@ -64,37 +64,37 @@ const Home = () => {
             <video src="./img/video.mp4" controls />
           </div>
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="features dark">
+      <div className="features dark"> 
         <div className="container">
           <div className="item">
             <h1>
-              Start your own <i>freelancing</i> carrer.
+              Start <i>investing</i> now.
             </h1>
             <h1>
-            Consider the benefits and freedom of being your own <i>boss</i>.
+            Dive into the world of innovation and potential high returns today!.
             </h1>
             <p>
-            If you're considering breaking into the world of freelancing, whether as a side hustle, 
-            a part-time job, or a full-time job starting a freelance business, you've come to the right place.
+            Join us in supporting visionary entrepreneurs, pioneering technologies, and groundbreaking ideas
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              More freedom
+              Explosive Growth
+
             </div>
 
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Flexible hours
+              Lucrative Potential
             </div>
 
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Self-management
+              Wealth Revolution
             </div>
-            <button>Become a seller</button>
+            <button>Invest Now</button>
           </div>
           <div className="item">
             <img

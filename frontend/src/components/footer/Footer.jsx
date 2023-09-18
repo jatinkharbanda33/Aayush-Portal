@@ -8,16 +8,18 @@ function Footer() {
         
         <div className="bottom">
           <div className="left">
-            <h2>Profolio</h2>
-            <span>© Profolio International Ltd. 2023</span>
+            <h2>Ayush Portal</h2>
+            
+            {/* <span>© Profolio International Ltd. 2023</span> */}
+            <span>© Copyright <strong>Ministry of Ayush</strong></span>
           </div>
           <div className="right">
             <div className="social">
-              <img src="/img/twitter.png" alt="" />
-              <img src="/img/facebook.png" alt="" />
+            <a href="https://twitter.com/moayush" ><img src="/img/twitter.png" alt="" /></a>
+            <a href="https://www.facebook.com/moayush"><img src="/img/facebook.png" alt="" /></a>
               <img src="/img/linkedin.png" alt="" />
-              <img src="/img/pinterest.png" alt="" />
-              <img src="/img/instagram.png" alt="" />
+              {/* <img src="/img/pinterest.png" alt="" /> */}
+              <a href="https://www.instagram.com/ministryofayush/"><img src="/img/instagram.png" alt="" /></a>
             </div>
             <div className="link">
               <img src="/img/language.png" alt="" />
@@ -29,6 +31,9 @@ function Footer() {
             </div>
             <img src="/img/accessibility.png" alt="" />
           </div>
+          <span>
+            <button className="buttonui">Feedback</button>
+          </span>
         </div>
       </div>
     </div>

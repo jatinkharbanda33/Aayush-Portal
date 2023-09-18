@@ -64,6 +64,7 @@
         }
   
         .popular {
+          margin-top: 20px;
           display: flex;
           align-items: center;
           gap: 10px;
@@ -87,9 +88,74 @@
       .right {
         height: 100%;
         img {
+          padding-left: 40px;
           height: 100%;
           object-fit:fill;
         }
       }
+    }
+  }
+
+  .input-container {
+    display: flex;
+    background: white;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #23272F 0%, #14161a 100%);
+    box-shadow: 10px 10px 20px #0e1013, -10px -10px 40px #383e4b;
+    padding: 0.3rem;
+    gap: 0.3rem;
+  }
+  
+  .input-container input {
+    border-radius: 0.8rem 0 0 0.8rem;
+    background: #ffffff;
+    box-shadow: inset 1px 1px 1px #2c686e, inset -1px -1px 1px #383e4b, 0px 0px 100px rgba(211, 208, 201, 0), 0px 0px 100px rgba(169, 160, 155, 0);
+    width: 100%;
+    flex-basis: 75%;
+    padding: 1rem;
+    border: none;
+    border: 1px solid transparent;
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .input-container input:focus {
+    border: 1px solid #19dece;
+    outline: none;
+    box-shadow: inset 0px 0px 10px rgba(30, 174, 214, 0.5), inset 0px 0px 10px rgba(76, 201, 205, 0.5), 0px 0px 100px rgba(115, 184, 203, 0.732), 0px 0px 100px rgba(22, 151, 202, 0.5);
+  }
+  
+  .input-container button {
+    flex-basis: 25%;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgb(18, 215, 222) 50%, rgb(51, 173, 218) 100%);
+    box-shadow: 0px 0px 1px rgba(195, 205, 207, 0.5), 0px 0px 1px rgba(228, 243, 242, 0.5);
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: #23272F;
+    border: none;
+    width: 100%;
+    border-radius: 0 1rem 1rem 0;
+    transition: all 0.2s ease-in-out;
+  }
+  // 135deg, rgb(18, 215, 222) 50%, rgb(51, 173, 218) 100%
+  .input-container button:hover {
+    background: linear-gradient(135deg, rgb(18, 215, 222) 0%, rgb(18, 215, 222) 100%);
+    box-shadow: 0px 0px 100px rgba(123, 220, 220, 0.7), 0px 0px 100px rgba(42, 121, 212, 0.5);
+  }
+  
+  @media (max-width: 500px) {
+    .input-container {
+      flex-direction: column;
+    }
+  
+    .input-container input {
+      border-radius: 0.8rem;
+    }
+  
+    .input-container button {
+      padding: 1rem;
+      border-radius: 0.8rem;
     }
   }

@@ -45,9 +45,9 @@ const Navbar = () => {
             <div className='links'>
                 <span>Explore</span>
                 <span>English</span>
-                <Link to="/login" className='link'>Sign In</Link>
+                <Link to="/login" className='link'><button className="buttonui">Sign In</button></Link>
                 {/* {!currentUser && <span> Invest</span>} */}
-                {!currentUser && <Link to="/register" className='link'>Register</Link>}
+                {!currentUser && <Link to="/register" className='link'><button className="buttonui"> Register</button></Link>}
                 {currentUser && (
                   <div className="user" onClick={()=>setOpen(!open)}>
                     <img src={currentUser.img || "/img/noavatar.jpg"} alt=""/>

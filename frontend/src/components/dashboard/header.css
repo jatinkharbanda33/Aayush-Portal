@@ -1,0 +1,120 @@
+*{
+    background-color: #E8E4E4;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #283e4a;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .header__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__left img {
+    width: 40px; /* Adjust the size according to your logo */
+    margin-right: 10px;
+  }
+  
+  .header__right {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    
+  }
+  
+  .header__right > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  /* Add more styles as needed */
+  /* ... previous styles ... */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    
+  }
+  
+ .left
+ {
+    
+    /* border: 2px solid red; */
+    width: 75%;
+    
+ }
+ .right
+ {
+    
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+ }
+.left .prof-sum{
+    background-color: #E8E4E4;
+}
+  .profile-summary {
+    /* text-align: center; */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-summary__image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .profile-summary__name {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .profile-summary__headline {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .profile-summary__summary {
+    margin-top: 20px;
+  }
+
+  .investedin
+  {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+  }
+  .showcase
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  .startups 
+  {
+    width: 20%;
+    flex-wrap: wrap;
+    margin: 6px;
+  }
+  .startups img
+  {
+    margin: 20px;
+  }
+  /* Add more styles as needed */
+  
+  

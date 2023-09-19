@@ -62,7 +62,7 @@ const Navbar = () => {
                           </>
                         )
                       }
-                      <Link className='link' to="/dashboard">Dashboard</Link>
+                      <Link className='link' to="messages">Messages</Link>
                       <Link className='link' onClick={handleLogout}>Logout</Link>
                     </div>}
                   </div>

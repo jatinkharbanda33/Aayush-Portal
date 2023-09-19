@@ -1,0 +1,15 @@
+.flexbox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; 
+}
+.startups{
+    flex: 1; /* Each tile takes up equal width */
+    min-width: calc(50% - 8px); /* Calculate width for 2 tiles per row with gap */
+    max-width: calc(50% - 8px); /* Calculate width for 2 tiles per row with gap */
+    background-color: #f0f0f0;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}

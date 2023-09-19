@@ -22,8 +22,8 @@ const { isLoading, error, data} = useQuery({
             {isLoading? ("loading") : 
             error? ("Something went wrong") :
             (<div className="user">
-                <img src={data.img || "/img/noavatar.jpg"} alt="" />
-                <p>{data.title}</p>
+                <img src={item.cover || "/img/noavatar.jpg"} alt="" />
+                <p>{item.title}</p>
             </div>)}
 
             <p>{item.desc}</p>

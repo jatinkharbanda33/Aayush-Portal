@@ -26,10 +26,10 @@ function Featured() {
           </div>
           <div className="popular">
             <span>Popular:</span>
-            <button onClick={() => { navigate(`/gigs?cat=design`) }}>Tech Startups</button>
-            <button onClick={() => { navigate(`/gigs?cat=wordpress`) }}>Travel</button>
-            <button onClick={() => { navigate(`/gigs?cat=logo`) }}>AI-ML</button>
-            <button onClick={() => { navigate(`/gigs?cat=ai`) }}>Education</button>
+            <button onClick={() => { navigate(`/gigs?cat=Tech`) }}>Tech Startups</button>
+            <button onClick={() => { navigate(`/gigs?cat=tnh`) }}>Travel</button>
+            <button onClick={() => { navigate(`/gigs?cat=bc`) }}>Blockchain & Crypto</button>
+            <button onClick={() => { navigate(`/gigs?cat=et`) }}>Education</button>
           </div>
           </div>
 

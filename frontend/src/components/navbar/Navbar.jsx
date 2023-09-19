@@ -20,6 +20,15 @@ const Navbar = () => {
     };
   },[])
 
+  const refreshPage = async () => {
+    try {
+      setTimeout('', 5000);
+       window.location.reload();
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const navigate = useNavigate();
 
@@ -46,7 +55,7 @@ const Navbar = () => {
             {<Link to="/gigs?cat" className='link'>View Startups</Link>}
                 <span>Explore</span>
                 <span>English</span>
-                <Link to="/login" className='link'>Sign In</Link>
+                {!currentUser && <Link to="/login" className='link'>Sign In</Link>}
                 {/* {!currentUser && <span> Invest</span>} */}
                 {!currentUser && <Link to="/register" className='link'> Register</Link>}
                 {currentUser && (
@@ -62,7 +71,7 @@ const Navbar = () => {
                           </>
                         )
                       }
-                      <Link className='link' to="/dashboard">Dashboard</Link>
+                      {currentUser?.isinv? <></> : <Link className='link' to="/dashboard">Dashboard</Link>}
                       <Link className='link' onClick={handleLogout}>Logout</Link>
                     </div>}
                   </div>
@@ -73,31 +82,31 @@ const Navbar = () => {
         <>
           <hr/>
           <div className='menu'>
-          <Link className="link menuLink" to="/">
+          <Link className="link menuLink" to="/gigs?cat=Tech" >
             Tech Startups
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=hnb" >
               Healthcare and Biotech
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=et" >
             EdTech
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=tnh" >
             Travel and Hospitality
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=ai" >
               AIML
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=bc" >
               Blockchain and Cryptocurrency
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=lt" >
               Legal Tech
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=cy" >
               Cybersecurity
             </Link>
-            <Link className="link menuLink" to="/">
+            <Link className="link menuLink" to="/gigs?cat=fnb" >
               Food and Beverage
             </Link>
           </div>

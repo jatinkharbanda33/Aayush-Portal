@@ -65,7 +65,7 @@ const Add = () => {
     e.preventDefault();
     mutation.mutate(state);
     console.log(state);
-   // navigate("/mygigs")
+    navigate("/mygigs")
   };
 
   return (

@@ -30,10 +30,10 @@ const MyGigs = () => {
       {isLoading?"loading" : error ? "error" :
       (<div className="container">
         <div className="title">
-          <h1>Gigs</h1>
-          {currentUser.isSeller && (
+          <h1>My Startups</h1>
+          {currentUser.isinv && (
               <Link to="/add">
-                <button>Add New Gig</button>
+                <button>Add New Startup</button>
               </Link>
             )}
         </div>
@@ -41,9 +41,8 @@ const MyGigs = () => {
           <tr>
             <th>Image</th>
             <th>Title</th>
-            <th>Price</th>
-            <th>Sales</th>
-            <th>Actions</th>
+            <th>Evaluation</th>
+            <th>Number of Employees</th>
           </tr>
           {data.map((gig)=>(
             <tr key={gig._id}>
@@ -51,8 +50,8 @@ const MyGigs = () => {
               <img className="img" src={gig.cover} alt='' />
             </td>
             <td>{gig.title}</td>
-            <td>{gig.price}</td>
-            <td>{gig.sales}</td>
+            <td>{gig.currEval}</td>
+            <td>{gig.nEmp}</td>
             <td>
               <img className='delete' src='./img/delete.png' alt=''
               onClick={() => handleDelete(gig._id)} />

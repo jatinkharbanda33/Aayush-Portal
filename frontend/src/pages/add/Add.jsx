@@ -116,14 +116,14 @@ const Add = () => {
             <button onClick={handleSubmit}>Create</button>
           </div>
           <div className="details">
-            <label htmlFor="">Current Evaluation</label>
+            <label htmlFor="currEval">Current Evaluation</label>
             <input
               type="text"
               name="currEval"
               placeholder="₹ xxxx"
               onChange={handleChange}
             />
-            <label htmlFor="">Number of Employess</label>
+            <label htmlFor="nEmp">Number of Employess</label>
             <input type="number" onChange={handleChange} name="nEmp" />
           </div>
         </div>

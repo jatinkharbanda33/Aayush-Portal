@@ -78,7 +78,7 @@ const Register = () => {
           <button type="submit">Register</button>
         </div>
         <div className="right">
-          <h1>Do you want to List your Startup</h1>
+          <h1>Are you a Startup Owner?</h1>
           <br />
           <div className="toggle">
           <label className="switch">

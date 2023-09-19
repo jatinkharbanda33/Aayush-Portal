@@ -47,7 +47,7 @@ const Gigs = () => {
       <h1> Startups</h1>
       <div className="menu">
         <div className="left">
-          <span>Budget</span>
+          <span>Evaluation</span>
           <input ref={minRef} type="number" placeholder="min" />
           <input ref={maxRef} type="number" placeholder="max" />
           <button onClick={apply}>Apply</button>

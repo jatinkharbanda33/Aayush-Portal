@@ -1,7 +1,8 @@
 import React from 'react'
-import './Investedin.css';
+import './hd.scss';
 export default function Investedin() {
   return (
+    <div className="dash" >
     <div className="investedin">
       <h3>STARUPS YOU'VE INVESTED IN</h3>
       <div className="flexbox">
@@ -29,5 +30,6 @@ export default function Investedin() {
       </div>
       </div>
     </div>
-  )
-}
+    </div>
+  );
+};

@@ -74,7 +74,7 @@ const Add = () => {
         <h1>List New Startup</h1>
         <div className="sections">
           <div className="info">
-            <label htmlFor="">Name</label>
+            <label htmlFor="title">Name</label>
             <input
               type="text"
               name="title"
@@ -104,7 +104,7 @@ const Add = () => {
                 {uploading ? "uploading" : "Upload"}
               </button>
             </div>
-            <label htmlFor="">Description</label>
+            <label htmlFor="desc">Description</label>
             <textarea
               name="desc"
               id=""

@@ -4,11 +4,15 @@
     // border: 1px solid rgb(237, 236, 236);
     border: 1px solid rgb(228, 228, 228);
     margin-bottom: 40px;
+    border-radius: 30px;
+    border-width: 4px;
+    border-color:thistle;
   
     img {
       width: 100%;
       height: 50%;
       object-fit: cover;
+      border-radius: 30px;
     }
   
     .info {
@@ -65,12 +69,7 @@
       align-items: center;
       justify-content: space-between;
   
-      img {
-        width: 16px;
-        height: 16px;
-        cursor: pointer;
-        object-fit: cover;
-      }
+      
   
       .price {
         span {

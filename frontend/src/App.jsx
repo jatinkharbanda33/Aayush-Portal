@@ -11,6 +11,7 @@ import Orders from "./pages/orders/Orders";
 import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/MyGigs";
+import Dashboard from "./pages/dboard/dashboard";
 import {
   QueryClient,
   QueryClientProvider,
@@ -88,6 +89,10 @@ const router = createBrowserRouter([
       {
         path: "/success",
         element: <Success />,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
       },
     ],
   }, 

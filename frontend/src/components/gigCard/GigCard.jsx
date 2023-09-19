@@ -23,22 +23,18 @@ const { isLoading, error, data} = useQuery({
             error? ("Something went wrong") :
             (<div className="user">
                 <img src={data.img || "/img/noavatar.jpg"} alt="" />
-                <span>{data.username}</span>
+                <p>{data.title}</p>
             </div>)}
 
             <p>{item.desc}</p>
-            <div className="star">
-                <img src="./img/star.png" alt="" />
-                <span>{!isNaN(item.totalStars / item.starNumber) &&
-                Math.round(item.totalStars / item.starNumber)}</span>
-            </div>
+            
         </div>
         <hr/>
         <div className="detail">
-            <img src="./img/heart.png" alt="" />
+        🤍
             <div className="price">
-            <span>STARTING AT</span>
-            <h2>INR {item.price}</h2>
+            <span>Evaluation</span>
+            <h2>INR {item.currEval}</h2>
             </div>
         </div>
     </div>

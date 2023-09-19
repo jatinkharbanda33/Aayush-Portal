@@ -43,9 +43,8 @@ const Gigs = () => {
   return (
     <div className='gigs'>
       <div className="container">
-      <span className="breadcrumbs">Ayush Portal {'>'} "abc" {'>'} </span>
-      <h1>Startups</h1>
-      <p>Explore the boundaries of art and technology with Liverr's AI artists</p>
+      <span className="breadcrumbs">Ayush Portal</span>
+      <h1> Startups</h1>
       <div className="menu">
         <div className="left">
           <span>Budget</span>
@@ -55,13 +54,13 @@ const Gigs = () => {
         </div>
         <div className="right">
           <span className='sortBy'>SortBy</span>
-          <span className='sortType'>{sort == "sales"? "Best Selling":"Newsest"}</span>
+          <span className='sortType'>{sort == "sales"? "Evaluation":"Newsest"}</span>
           <img src='./img/down.png' alt="" onClick={()=>setOpen(!open)}/>
           {open && (<div className="rightMenu">
             {sort=="sales"? 
             <span onClick={()=>reSort("createdAt")}>Newest</span>
             : 
-            <span onClick={()=>reSort("sales")}>BestSelling</span>
+            <span onClick={()=>reSort("sales")}>Evaluation</span>
             }
           </div>)}
         </div>

@@ -36,14 +36,14 @@ const Gig = () => {
       error? "Something went wrong" :
       (<div className="container">
         <div className="left">
-          <span className="breadcrumbs">Fiverr {">"} Graphics & Design {">"}</span>
+          {/* <span className="breadcrumbs">Fiverr {">"} Graphics & Design {">"}</span> */}
           <h1>{data.title}</h1>
           {isLoadingUser? ("loading") :
           errorUser?("something went wrong") : 
           (<div className="user">
             <img className="pp" src={dataUser.img || "/img/noavatar.jpg"} alt=''/>
             <span>{dataUser.username}</span>
-            {!isNaN(data.totalStars / data.starNumber) && (
+            {/* {!isNaN(data.totalStars / data.starNumber) && (
                   <div className="stars">
                     {Array(Math.round(data.totalStars / data.starNumber))
                       .fill()
@@ -52,14 +52,14 @@ const Gig = () => {
                       ))}
                     <span>{Math.round(data.totalStars / data.starNumber)}</span>
                   </div>
-                )}
+                )} */}
           </div>)}
 
-          <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+          {/* <Slider slidesToShow={1} arrowsScroll={1} className="slider">
             {data.images.map((img) => (
                 <img key={img} src={img} alt="" />
               ))}
-          </Slider>
+          </Slider> */}
 
           <h2>About This Gig</h2>
           <p>
@@ -122,10 +122,10 @@ const Gig = () => {
             </div>
           </div>)}
           
-          <Reviews gigId={id} />
+          {/* <Reviews gigId={id} /> */}
         </div> 
         <div className="right">
-        <div className="price">
+        {/* <div className="price">
             <h3>{data.shortTitle}</h3>
             <h2>INR {data.price}</h2>
           </div>
@@ -147,7 +147,7 @@ const Gig = () => {
                   <span>{feature}</span>
                 </div>
               ))}
-          </div>
+          </div> */}
           <Link to={`/pay/${id}`}>
           <button>Continue</button>
           </Link>

@@ -247,6 +247,20 @@
             font-weight: 500;
           }
         }
+
+        .message {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+  
+          h2{
+            font-weight: 300;
+          }
+  
+          h3{
+            font-weight: 500;
+          }
+        }
   
         p{
           color: gray;

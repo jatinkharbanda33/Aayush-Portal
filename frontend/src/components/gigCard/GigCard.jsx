@@ -14,6 +14,23 @@ const { isLoading, error, data} = useQuery({
             return res.data;
           }),
     })
+
+    function TextCapper({ text, maxLength }) {
+      const truncateText = (text, maxLength) => {
+        if (text.length <= maxLength) {
+          return text;
+        }
+        return text.slice(0, maxLength) + '...'; // Add ellipsis for truncated text
+      };
+    
+      const truncatedText = truncateText(text, maxLength);
+    
+      return (
+        <div>
+          <p>{truncatedText}</p>
+        </div>
+      );
+    }
   return (
     <Link to={`/gig/${item._id}`} className='link'>
     <div className='gigCard'>
@@ -25,8 +42,8 @@ const { isLoading, error, data} = useQuery({
                 <img src={item.cover || "/img/noavatar.jpg"} alt="" />
                 <p>{item.title}</p>
             </div>)}
-
-            <p>{item.desc}</p>
+            <TextCapper text={item.desc} maxLength={50} />
+            {/* <p>TextCapper({item.desc},100)</p> */}
             
         </div>
         <hr/>

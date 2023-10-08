@@ -1,6 +1,8 @@
 import React from 'react'
 import './hd.scss';
 export default function Investedin() {
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  const queryClient = useQueryClient();
   return (
     <div className="dash" >
     <div className="investedin">

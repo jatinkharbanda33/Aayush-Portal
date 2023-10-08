@@ -1,0 +1,12 @@
+.horizontal-scrollable {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .item {
+    flex: 0 0 auto;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
